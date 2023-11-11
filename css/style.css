@@ -1,0 +1,169 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+:root{
+   --mauveColor:hsl(260, 100%, 70%);
+   --greeneColor:hsl(170, 100%, 35%);
+   --gray:hsl(0, 0%, 50%);
+   --black:#000;
+   --white:#fff;
+}
+
+body{
+    background: var(--black);
+    overflow: hidden;
+    padding:0px  5px;
+    padding-top: 5px;
+   }
+
+.block-console{
+    position: absolute;
+    width: 805px;
+    height: 800px;
+    border: 2px solid var(--gray);
+    margin: 0px;
+    padding: 0px;
+ }
+
+ .block-console .containe-brick{
+    display: grid;
+    grid-template-columns: repeat(16, 50px); 
+    margin: 0px;
+    padding: 0px;
+   }
+   
+   
+   .ball{
+      /* position: absolute;    
+      bottom: 15px; 
+      width: 20px;
+      height: 20px;
+      background-image: url("ball1.png");
+      border-radius: 50px;
+      
+      
+   }
+   .block-console .player{
+      position: absolute;   
+      width: 100px;
+      height: 20px;
+      bottom: 15px;
+      
+      background: #363062;
+   }
+   
+   .Menus {
+    
+      width: 50%;
+      height: 800px;
+      display: flex;
+      flex-wrap: wrap;
+      float: right;
+
+      border: 2px solid var(--gray);
+      margin: 2px;
+      border-radius: 8px;
+      color: var(--white);
+   }
+   .block1,.block2{
+     width: 50%;
+     height: 50%;
+     padding:0px 5px;
+     padding-top: 20px;
+   }
+    .block1{
+      position: relative;
+      border-right: 2px solid  var(--gray);
+    }
+    button{
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%,50%);
+      width: 15rem;  
+      text-align: center;
+      padding: 8px 0px ;    
+      font-size: 33px;
+      background: transparent;
+      color: var(--greeneColor);
+      border: 1px solid var(--greeneColor);
+      cursor: pointer;
+    }
+    .restart{
+      margin-top: 100px;
+    }
+    .block2 div{
+       width: 100%;
+       height: 50px;
+       padding-left: 25px;
+       font-size: 30px;
+       display: flex;
+       align-items: center;
+   }
+      .block3{
+         width: 100%;
+        height: 50%;
+        border-top: 2px solid var(--gray);
+        padding-top: 20px;
+      }
+    h2{
+       text-align: center;
+       font-size: 40px;
+       text-transform: capitalize;
+       margin-bottom: 3rem;
+    }
+ 
+    .block2 h2{
+      text-align: left;
+      padding-left: 20px;
+    }
+    .block2 div img{
+      margin-right: 5px;
+    }
+   .block2 div span:first-of-type{
+      margin-left: 20px;
+      color: var(--mauveColor);      
+   }
+   .block2 div span:last-of-type{
+      color: var(--gray);       
+   }
+
+   .carte-level{   
+      display: flex; 
+      justify-content: space-around;
+      flex-direction: row;
+      flex-wrap: wrap;
+   }
+   .carte-level div{
+      position: relative;
+      width: 200px;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 30px;
+      margin-bottom: 35px;
+      background: var(--gray)
+   }
+
+   .carte-level div span{
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      font-weight: 400;
+   }
+   .carte-level .div-level1{
+      background: var(--greeneColor);
+   }
+ */
+
+
+ h1{
+   display: flex;
+   flex-direction: row;
+  flex-direction: column;
+  justify-content: space-around;
+ }

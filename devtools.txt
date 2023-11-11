@@ -1,0 +1,23 @@
+Loading: Cela représente le temps que le navigateur a passé à charger les ressources de la page, 
+                    telles que les fichiers CSS, JavaScript, images, etc.
+
+Scripting : Cela représente le temps passé à exécuter du code JavaScript sur la page. 
+                    Cela peut inclure l'exécution de scripts de la page web ou de scripts tiers.
+
+Rendering : Il s'agit du temps passé à générer le rendu visuel de la page, 
+                    y compris le traitement des styles CSS et la construction du modèle de la page.
+
+Painting : Cette mesure concerne le temps que le navigateur a passé à dessiner le contenu de la page, 
+                    y compris la création d'images bitmap pour l'affichage à l'écran.
+
+System: Cela représente le temps consacré aux opérations système, telles que la gestion des ressources, 
+                    la gestion de la mémoire, etc.
+
+Idle : Il s'agit du temp
+s où le navigateur est en attente, sans effectuer aucune tâche de traitement.
+
+Total : C'est la somme totale de tous les temps mentionnés ci-dessus. 
+                    Cela représente le temps total nécessaire pour charger et afficher la page.
+
+
+3000
