@@ -4,6 +4,7 @@ let rectBall = MyBall.getBoundingClientRect();
 
 let _speedX=3.5;
 let _speedY=-6;
+let _speed=0;
 
 if (px768.matches) {
     _speedX=3;
@@ -24,7 +25,7 @@ var blockConsoles = {
 var  players = {
     x: (rectBlock.width/2)-(rectPlayer.width/2),
     y: rectPlayer.y,
-    speed: 10,
+    speed: _speed,
     height: rectPlayer.height,
     width: rectPlayer.width,
 }

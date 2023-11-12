@@ -1,8 +1,12 @@
 let isMovingLeft= false
 let isMovingRight =false
 
+
 function movePlayer() {
-  
+    if (!isStart || (!isMovingRight && !isMovingLeft)) {
+        return;
+    }
+    
     if (isMovingLeft && players.x >0 ){
         players.x-=players.speed; 
     }
@@ -21,14 +25,18 @@ function movePlayer() {
 }
 
     
-    
+
    
 document.addEventListener("keydown", (e) => {
     if (isStart) {
         if (e.key === "ArrowLeft") {
+            _speed=10;
+            players.speed=_speed
             isMovingLeft = true;
         }
         if (e.key === "ArrowRight") {
+            _speed=10;
+            players.speed=_speed
             isMovingRight = true;
         }
     }

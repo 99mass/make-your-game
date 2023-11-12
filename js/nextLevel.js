@@ -1,4 +1,5 @@
 function nextLevel() {
+  cancelAnimationFrame(req);
   if (lev<5) {
     showCustomAlert("win"); 
   }
@@ -42,6 +43,9 @@ function nextLevel() {
     currentLive = live.textContent=comptLives;
     localStorage.setItem(`level_${currentLevel}_live`,currentLive)
   
+
+    isMovingLeft= false
+    isMovingRight =false
     comptLives=3;
     isTimeRune=false;
     live.textContent=comptLives;

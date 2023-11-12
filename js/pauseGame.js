@@ -3,7 +3,8 @@ function pauseGame() {
     btnPause.addEventListener('click', () => {
         
         if (!isPaused && isStart) {       
-               
+            isMovingLeft= false
+            isMovingRight =false               
             isPaused=true;
             btnContinue.style.display='block';
             btnPause.style.display='none';
@@ -14,7 +15,9 @@ function pauseGame() {
     btnContinue.addEventListener('click', () => {
         
         if (isPaused && isStart) {   
-                   
+            
+            isMovingLeft= false
+            isMovingRight =false
             isPaused=false;
             req=requestAnimationFrame(gameloop);
             btnContinue.style.display='none';

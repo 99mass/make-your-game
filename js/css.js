@@ -29,7 +29,9 @@ block_console.style.position = "absolute";
 block_console.style.width= "50%";
 
 // block_console.style.height="80vh";
-block_console.style.height="700px";
+// block_console.style.height="700px";
+block_console.style.height="600px";
+
 
 block_console.style.border= `2px solid ${root["--gray"]}`;
 block_console.style.margin="0px";

@@ -81,6 +81,7 @@ function initialiseElementDOM() {
     player.style.top=players.y +3+ 'px';
     player.style.left=players.x+ 'px';
 
+    btnRestart.style.display='none';
     btnPause.style.display='none';
     btnContinue.style.display='none';
     time.innerHTML = currentTime;

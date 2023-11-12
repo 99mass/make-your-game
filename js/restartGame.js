@@ -9,6 +9,8 @@ function restartgame() {
         isTimeRune = false ;         
         isRestart = true;
         initialise=true;
+        isMovingLeft= false
+        isMovingRight =false
         index=0; //remettre le temps a zero
         resetGame2();
         localStorage.clear();
@@ -28,6 +30,8 @@ function restartgame() {
         isTimeRune = false;        
         isRestart = true;
         initialise=true;
+        isMovingLeft= false
+        isMovingRight =false
         index=0; //remettre le temps a zero
         resetGame2();
         isEscapePressed = true; 
@@ -40,6 +44,7 @@ function restartgame() {
         isEscapePressed = false;
       }
     });
+
   }
   
 
@@ -82,6 +87,7 @@ function restartgame() {
     // relancer le jeux
     btnStart.addEventListener('click', () => {
         if (isRestart ) {     
+          player.style.left = players.x + 'px';
             isStart = true;
             isPaused=false;
             isDead=false;
@@ -99,6 +105,7 @@ function restartgame() {
       if (
         (event.key === " " || event.key === "Spacebar" || event.key === "Space") 
         ) {    
+          player.style.left = players.x + 'px';
           btnRestart.style.display='block';
             isStart = true;
             isPaused=false;

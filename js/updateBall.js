@@ -106,11 +106,14 @@ if (!(myBallObj.x + myBallObj.width >= players.x &&
     myBallObj.y + myBallObj.height> players.y  && !stopMovingPlayer
 ) {
     stopMovingPlayer=true;
-    myBallObj.ballSpeedX = -myBallObj.ballSpeedX; 
+    myBallObj.ballSpeedX =0; 
+
 }
 
 
-if (stopMovingPlayer && myBallObj.y> players.y ) {        
+// if (stopMovingPlayer && myBallObj.y> players.y ) {  
+if (stopMovingPlayer && myBallObj.y> rectBlock.height ) {        
+    myBallObj.ballSpeedX =_speedX;
     comptLives-=1; //decremente the live 
     // gameover();
     resetGame();         

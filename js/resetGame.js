@@ -1,5 +1,5 @@
 function resetGame() {
-
+  cancelAnimationFrame(req);
     btnContinue.style.display='none';
     btnPause.style.display='none';
   
@@ -10,6 +10,8 @@ function resetGame() {
     isDead=true;
     isStart=false;
     isBallMove=false;
+    isMovingLeft= false
+    isMovingRight =false
 
     player.style.left=players.x+ 'px';
     MyBall.style.left=myBallObj.x+ 'px';
