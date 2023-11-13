@@ -150,8 +150,8 @@ function showDetailLevelAlert (_lev) {
     let liveLevel = localStorage.getItem(`level_${_lev}_live`)
     
     message.innerHTML = `<p>Time : <strong>${timeLevel}</strong></p>
-    <p>Lives : <strong>${liveLevel}</strong></p>
-    <p>Score : <strong>${scoreLevel}</strong></p>
+    <p>Lives : <strong>${liveLevel}/3</strong></p>
+    <p>Score : <strong>${scoreLevel}XP</strong></p>
     `;
 
 

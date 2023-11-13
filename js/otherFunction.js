@@ -1,5 +1,25 @@
 let index;
 let isPageActive = true; // Variable pour suivre l'état de la page
+function convertirTemps(secondes) {
+  var heures = Math.floor(secondes / 3600);
+  var minutes = Math.floor((secondes % 3600) / 60);
+  var secondesRestantes = secondes % 60;
+
+  // Formatage pour ajouter un zéro devant les chiffres < 10
+  heures = (heures < 10) ? "0" + heures : heures;
+  minutes = (minutes < 10) ? "0" + minutes : minutes;
+  secondesRestantes = (secondesRestantes < 10) ? "0" + secondesRestantes : secondesRestantes;
+    if (heures > 0) {
+      return `${heures}h:${String(minutes).padStart(2, '0')}mn:${String(secondesRestantes).padStart(2, '0')}s`;
+  } else if (minutes > 0) {
+      return `${minutes}mn:${String(secondesRestantes).padStart(2, '0')}s`;
+  } else {
+      return `${secondesRestantes}s`;
+  }
+    
+ 
+}
+
 
 function times(temps) {
     let currentTime = temps;
@@ -13,8 +33,16 @@ function times(temps) {
       const currentLevel = lev-1; // Remplacez par le niveau actuel.
       currentTime = localStorage.getItem(`level_${currentLevel}time`) || 0;
       currentTime = time.innerHTML = index;
+      // console.log(currentTime);
 
-      localStorage.setItem(`level_${lev+1}_time`, currentTime);
+      // if (currentTime===60) {
+
+        var tempsFormate = convertirTemps(currentTime);
+        console.log(tempsFormate); // Affichera "01:01:05"
+         
+      // }
+
+      localStorage.setItem(`level_${lev+1}_time`, tempsFormate);
 
       if (!isPaused && isTimeRune ) {          
         index++;
