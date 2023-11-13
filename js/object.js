@@ -2,7 +2,7 @@ let rectBlock=block_console.getBoundingClientRect();
 let rectPlayer=player.getBoundingClientRect();
 let rectBall = MyBall.getBoundingClientRect();
 
-let _speedX=3.5;
+let _speedX=2;
 let _speedY=-6;
 let _speed=0;
 

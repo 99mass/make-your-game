@@ -30,7 +30,7 @@ function resetGame() {
       isTimeRune=false;
       comptLives=3; 
       live.textContent=comptLives;
-      xp.innerHTML=0; //remettre le score a 0XP
+      xp.innerHTML=localStorage.getItem(`level_${currentLevel-1}_score`) || 0; //remettre le score a 0XP
           
       time.innerHTML = currentTime;
       // reconstitue the brick block
