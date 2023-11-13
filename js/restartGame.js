@@ -50,7 +50,6 @@ function restartgame() {
 
   
   function resetGame2() {
-    cancelAnimationFrame(req);
     brickBreaked=0;
     allbricks=[]; 
     container.textContent="";
@@ -75,8 +74,7 @@ function restartgame() {
     player.style.left = players.x + 'px';
     MyBall.style.top = myBallObj.y + 'px';
     MyBall.style.left =myBallObj.x + 'px';
-    _speedX=2;
-    myBallObj.ballSpeedX=_speedX
+   
     
     // Réinitialise les éléments du jeu
     btnStart.style.display = 'block';
@@ -98,16 +96,19 @@ function restartgame() {
             isRestart = false;
             btnStart.style.display = 'none';
             btnRestart.style.display='block';
-
-            // cancelAnimationFrame(req);
-            // req = requestAnimationFrame(gameloop);
+            _speedX=2.5;
+            myBallObj.ballSpeedX=_speedX
+            cancelAnimationFrame(req);
+            req = requestAnimationFrame(gameloop);
         }
     });
     
     document.addEventListener('keydown', (event) => {
+
       if (
-        (event.key === " " || event.key === "Spacebar" || event.key === "Space") 
+        ((event.key === " " || event.key === "Spacebar" || event.key === "Space" )  &&  isRestart && !isPaused) 
         ) {    
+         
           player.style.left = players.x + 'px';
           btnRestart.style.display='block';
             isStart = true;
@@ -116,10 +117,13 @@ function restartgame() {
             isTimeRune = true;
             isRestart = false;            
             btnStart.style.display = 'none';
+            btnPause.style.display='block';  
             btnRestart.style.display='block';
+            _speedX=2.5;
+            myBallObj.ballSpeedX=_speedX
 
-            // cancelAnimationFrame(req);
-            // req = requestAnimationFrame(gameloop);
+            cancelAnimationFrame(req);
+            req = requestAnimationFrame(gameloop);
           }
     });
 }

@@ -30,7 +30,7 @@ block_console.style.width= "50%";
 
 // block_console.style.height="80vh";
 // block_console.style.height="700px";
-block_console.style.height="710px";
+block_console.style.height="705px";
 
 
 block_console.style.border= `2px solid ${root["--gray"]}`;
@@ -54,6 +54,8 @@ MyBall.style.zIndex="99";
 
 player.style.position = "absolute";
 player.style.width="100px";
+player.style.width="910px";
+
 player.style.height="18px";
 player.style.bottom = "15px"; 
 player.style.background= "#363062";
