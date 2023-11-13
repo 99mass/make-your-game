@@ -33,14 +33,9 @@ function times(temps) {
       const currentLevel = lev-1; // Remplacez par le niveau actuel.
       currentTime = localStorage.getItem(`level_${currentLevel}time`) || 0;
       currentTime = time.innerHTML = index;
-      // console.log(currentTime);
-
-      // if (currentTime===60) {
-
+    
         var tempsFormate = convertirTemps(currentTime);
         console.log(tempsFormate); // Affichera "01:01:05"
-         
-      // }
 
       localStorage.setItem(`level_${lev+1}_time`, tempsFormate);
 
