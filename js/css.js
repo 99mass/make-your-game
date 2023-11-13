@@ -54,7 +54,6 @@ MyBall.style.zIndex="99";
 
 player.style.position = "absolute";
 player.style.width="100px";
-player.style.width="910px";
 
 player.style.height="18px";
 player.style.bottom = "15px"; 
