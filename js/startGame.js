@@ -26,7 +26,9 @@ function startGame() {
     // Gestion de la touche Space
     let isSapePressed = false;
     document.addEventListener('keydown', (event) => {     
-        
+        if (isRestart) {
+            return;
+        }
         
         if ( 
             (event.key === " "|| event.key === "Spacebar" ||event.key === "Space") &&           
@@ -51,7 +53,7 @@ function startGame() {
     });
 
     document.addEventListener("keyup", (event) => {
-        if (event.key === "Escape") {
+        if (event.key === "Escape" &&  !isRestart ) {
           isSapePressed = false;
         }
     });
