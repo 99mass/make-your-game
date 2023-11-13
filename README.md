@@ -59,24 +59,24 @@ Le joueur déplace la raquette horizontalement pour maintenir la balle en jeu et
 
 
 
-#### Screenshots level 1
+#### Screenshot level 1
 
 ![level1](./svg/levels/level1.png)
 
-#### Screenshots level 2
+#### Screenshot level 2
 
 ![level1](./svg/levels/level2.png)
 
 
-#### Screenshots level 3
+#### Screenshot level 3
 
 ![level1](./svg/levels/level3.png)
 
-#### Screenshots level 4
+#### Screenshot level 4
 
 ![level1](./svg/levels/level4.png)
 
-#### Screenshots level 5
+#### Screenshot level 5
 
 ![level1](./svg/levels/level5.png)
 
