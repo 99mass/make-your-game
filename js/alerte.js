@@ -84,7 +84,7 @@ function showCustomAlert (status) {
         initialise=true;
         if(status==="champion"){
             window.location.reload();//recommencer le jeux
-            // localStorage.clear()
+            localStorage.clear()
         }
     });
     contenMessageBtn.appendChild(nextButton);

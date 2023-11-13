@@ -1,4 +1,3 @@
- 
 function restartgame() {
  
     // Bouton Restart
@@ -127,3 +126,21 @@ function restartgame() {
     });
 }
 
+
+
+// function restartgame() {
+//   // Bouton Restart
+//     btnRestart.addEventListener("click", () => {
+//       window.location.reload();//recommencer le jeux
+//       localStorage.clear()
+//     });
+
+//     document.addEventListener("keyup", (event) => {
+     
+//         if (event.key === "Escape"  ) {
+//           window.location.reload();//recommencer le jeux
+//           localStorage.clear()
+//         }
+
+//       });
+// }
