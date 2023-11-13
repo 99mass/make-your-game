@@ -50,6 +50,7 @@ function restartgame() {
 
   
   function resetGame2() {
+    cancelAnimationFrame(req);
     brickBreaked=0;
     allbricks=[]; 
     container.textContent="";
@@ -74,6 +75,8 @@ function restartgame() {
     player.style.left = players.x + 'px';
     MyBall.style.top = myBallObj.y + 'px';
     MyBall.style.left =myBallObj.x + 'px';
+    _speedX=2;
+    myBallObj.ballSpeedX=_speedX
     
     // Réinitialise les éléments du jeu
     btnStart.style.display = 'block';
@@ -96,8 +99,8 @@ function restartgame() {
             btnStart.style.display = 'none';
             btnRestart.style.display='block';
 
-            cancelAnimationFrame(req);
-            req = requestAnimationFrame(gameloop);
+            // cancelAnimationFrame(req);
+            // req = requestAnimationFrame(gameloop);
         }
     });
     
@@ -115,8 +118,8 @@ function restartgame() {
             btnStart.style.display = 'none';
             btnRestart.style.display='block';
 
-            cancelAnimationFrame(req);
-            req = requestAnimationFrame(gameloop);
+            // cancelAnimationFrame(req);
+            // req = requestAnimationFrame(gameloop);
           }
     });
 }
