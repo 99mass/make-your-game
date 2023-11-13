@@ -74,6 +74,8 @@ function restartgame() {
     player.style.left = players.x + 'px';
     MyBall.style.top = myBallObj.y + 'px';
     MyBall.style.left =myBallObj.x + 'px';
+    _speedY=-6;
+    myBallObj.ballSpeedY=_speedY
    
     
     // Réinitialise les éléments du jeu
@@ -96,8 +98,7 @@ function restartgame() {
             isRestart = false;
             btnStart.style.display = 'none';
             btnRestart.style.display='block';
-            _speedX=2.5;
-            myBallObj.ballSpeedX=_speedX
+
             cancelAnimationFrame(req);
             req = requestAnimationFrame(gameloop);
         }
@@ -118,9 +119,7 @@ function restartgame() {
             isRestart = false;            
             btnStart.style.display = 'none';
             btnPause.style.display='block';  
-            btnRestart.style.display='block';
-            _speedX=2.5;
-            myBallObj.ballSpeedX=_speedX
+            btnRestart.style.display='block';            
 
             cancelAnimationFrame(req);
             req = requestAnimationFrame(gameloop);
