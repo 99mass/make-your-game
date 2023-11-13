@@ -6,6 +6,9 @@ let _speedX=2;
 let _speedY=-6;
 let _speed=0;
 
+if (px768.matches){
+_speedY=-4
+}
 
 var blockConsoles = {
     x: rectBlock.x,
