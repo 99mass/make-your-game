@@ -30,4 +30,4 @@ Le joueur déplace la raquette horizontalement pour maintenir la balle en jeu et
     - Le jeu enregistre les meilleurs scores.
 
 
-![App Screenshot](https://camo.githubusercontent.com/8f8ea6a0973619ee0a86e3981758d1af3c17d6f346322ea81aa248de2ca7224e/68747470733a2f2f7261772e6769746875622e636f6d2f6d6c69736f6e2f61726b616e6f69642f6d61737465722f73637265656e73686f742e706e67)
+![App Screenshot](./svg/arkanoid.png)
