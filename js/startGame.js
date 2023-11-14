@@ -18,7 +18,8 @@ function startGame() {
             if (!isReset) {                
                 times(currentTime);        
             }
-            req = requestAnimationFrame(gameloop);
+            gameloop();
+            // req = requestAnimationFrame(gameloop);
             
         }
     });
@@ -47,7 +48,8 @@ function startGame() {
             if (!isReset) {                
                 times(currentTime);        
             }
-            req = requestAnimationFrame(gameloop);
+            gameloop();
+            // req = requestAnimationFrame(gameloop);
             isSapePressed = true;
         }
     });

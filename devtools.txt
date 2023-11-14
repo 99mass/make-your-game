@@ -20,4 +20,4 @@ Total : C'est la somme totale de tous les temps mentionnés ci-dessus.
                     Cela représente le temps total nécessaire pour charger et afficher la page.
 
 
-3000
+brick : 25000
