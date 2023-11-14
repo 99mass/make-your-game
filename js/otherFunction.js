@@ -67,25 +67,6 @@ function times(temps) {
 }
 
 
-
-// function startTime() {
-//   document.addEventListener('keydown', (event) => {
-//     if (
-//         (event.key === " "||event.key === "Spacebar" ||event.key === "Space") && !isRestart && !isPaused && !isStart && !isTimeRune          
-//         ) {        
-//         times(currentTime); 
-//     }
-//   });
-  
-//   btnStart.addEventListener('click', () => {
-//     if (!isStart && !isPaused  && !isTimeRune && !isRestart) {        
-//         times(currentTime);         
-//     }
-//   });
-  
-// }
-
-
 function reconstitueBricks() {
   for (let b = 0; b < allbricks.length; b++) {
     const brick = allbricks[b];
@@ -111,6 +92,22 @@ function initialiseElementDOM() {
 }
 
 
+// function startTime() {
+//   document.addEventListener('keydown', (event) => {
+//     if (
+//         (event.key === " "||event.key === "Spacebar" ||event.key === "Space") && !isRestart && !isPaused && !isStart && !isTimeRune          
+//         ) {        
+//         times(currentTime); 
+//     }
+//   });
+  
+//   btnStart.addEventListener('click', () => {
+//     if (!isStart && !isPaused  && !isTimeRune && !isRestart) {        
+//         times(currentTime);         
+//     }
+//   });
+  
+// }
 
 // document.addEventListener('keydown', (event) => {
 //     if (event.key === 'ArrowUp') {

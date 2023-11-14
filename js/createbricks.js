@@ -1,5 +1,6 @@
 let allbricks=[];
 
+// defind form brick
 const brickToHidden=[
                     [   
                         1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,
@@ -41,7 +42,6 @@ let countBrickToBreaked=0;
 
 function createBricks(numberofbrick) {
     
-    // const brickWidth = 50;
     const brickHeight = 25;
     countBrickToBreaked =0
     
@@ -51,7 +51,6 @@ function createBricks(numberofbrick) {
                        
             const brick = document.createElement("div");   
             brick.className =`brick brick_${row}`; 
-            // brick.style.width = brickWidth + "px";
             brick.style.height = brickHeight + "px";
             brick.style.border=`0.5px solid${root["--black"]}`;
             brick.style.borderTop="none";
@@ -60,7 +59,7 @@ function createBricks(numberofbrick) {
             let breaked=true;
 
             if ( lev === 0 && !brickToHidden[lev].includes(row+1) ) {
-                // let currentLevel = localStorage.getItem("level_0_score") || 0;                
+
                 let currentLevel = localStorage.getItem("level") || 0;
                  currentLevel =  levels.innerHTML 
                 brick.style.backgroundColor=root["--green4"];

@@ -14,11 +14,11 @@ let lev=0;
 window.onload=()=>{
     // place ball and player in the middle consol
     initialiseElementDOM();
-localStorage.clear()
+   localStorage.clear()
     // create bricks
     createBricks(96);
     
-    // start game commade withe the touche Enter or start button
+    // start game 
     startGame();
     
     //restart the game 
