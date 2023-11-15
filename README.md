@@ -78,7 +78,7 @@ Le joueur déplace la raquette horizontalement pour maintenir la balle en jeu et
 
 #### Screenshot level 5
 
-![level1](./svg/levels/level5.png)
+![level5](./svg/levels/level5.png)
 
 
 ## Authors
