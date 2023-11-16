@@ -14,9 +14,14 @@ let levelKey
         myBallObj.x + myBallObj.width >= players.x &&
         myBallObj.x <= players.x + players.width  &&
         myBallObj.y + myBallObj.height>= players.y 
-    ) {       
-        myBallObj.ballSpeedY = -myBallObj.ballSpeedY;   
-        return        
+    ) {     
+        // si la a toucher les coins de de la raquette
+            if (myBallObj.x + myBallObj.width/2 <= players.x || myBallObj.x + myBallObj.width/2 >=players.x + players.width ) {
+                myBallObj.ballSpeedX = -myBallObj.ballSpeedX; 
+            }
+            myBallObj.ballSpeedY = -myBallObj.ballSpeedY;   
+    
+            return        
     }
 }
 
@@ -84,9 +89,8 @@ function brickBreak() {
 function mouveBall (){
   myBallObj.x +=myBallObj.ballSpeedX;
   myBallObj.y +=myBallObj.ballSpeedY;
-//  liberer le player apres 1second
 
-
+// la ball a toucher les gauche et droit du block
   if (myBallObj.x<=2 || myBallObj.x+myBallObj.width>=block_console.clientWidth-2 ) {  
       myBallObj.ballSpeedX = -myBallObj.ballSpeedX;       
   }
@@ -96,11 +100,11 @@ function mouveBall (){
   }
   
  
-  //   break brick here
+  // break brick here
   brickBreak() ;
   checkCollision();
 
-
+// la balle a depasser la raquette
 if (!(myBallObj.x + myBallObj.width >= players.x &&
     myBallObj.x <= players.x + players.width)  &&
     myBallObj.y + myBallObj.height> players.y  && !stopMovingPlayer
@@ -111,7 +115,6 @@ if (!(myBallObj.x + myBallObj.width >= players.x &&
 }
 
 
-// if (stopMovingPlayer && myBallObj.y> players.y ) {  
 if (stopMovingPlayer && myBallObj.y> rectBlock.height ) {        
     myBallObj.ballSpeedX =_speedX;
     comptLives-=1; //decremente the live 

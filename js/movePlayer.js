@@ -1,7 +1,7 @@
 let isMovingLeft= false
 let isMovingRight =false
 
-
+// deplacement la raquette
 function movePlayer() {
     if (!isStart || (!isMovingRight && !isMovingLeft)) {
         return;
@@ -11,7 +11,7 @@ function movePlayer() {
         players.x-=players.speed; 
     }
 
-    if (isMovingRight && players.x+players.width<blockConsoles.width-10){
+    if (isMovingRight && players.x+players.width<blockConsoles.width-10 ){
         players.x +=players.speed;
     }    
 

@@ -1,5 +1,6 @@
 let index;
 let isPageActive = true; // Variable pour suivre l'état de la page
+
 function convertirTemps(secondes) {
   var heures = Math.floor(secondes / 3600);
   var minutes = Math.floor((secondes % 3600) / 60);
@@ -34,8 +35,7 @@ function times(temps) {
       currentTime = localStorage.getItem(`level_${currentLevel}time`) || 0;
       currentTime = time.innerHTML = index;
     
-        var tempsFormate = convertirTemps(currentTime);
-        console.log(tempsFormate); // Affichera "01:01:05"
+        var tempsFormate = convertirTemps(currentTime);        
 
       localStorage.setItem(`level_${lev+1}_time`, tempsFormate);
 
@@ -90,89 +90,4 @@ function initialiseElementDOM() {
     btnContinue.style.display='none';
     time.innerHTML = currentTime;
 }
-
-
-// function startTime() {
-//   document.addEventListener('keydown', (event) => {
-//     if (
-//         (event.key === " "||event.key === "Spacebar" ||event.key === "Space") && !isRestart && !isPaused && !isStart && !isTimeRune          
-//         ) {        
-//         times(currentTime); 
-//     }
-//   });
-  
-//   btnStart.addEventListener('click', () => {
-//     if (!isStart && !isPaused  && !isTimeRune && !isRestart) {        
-//         times(currentTime);         
-//     }
-//   });
-  
-// }
-
-// document.addEventListener('keydown', (event) => {
-//     if (event.key === 'ArrowUp') {
-//          myBallObj.ballSpeedX *= 0.5;
-//          myBallObj.ballSpeedY *= 0.5;
-//     }
-//     if (event.key === 'ArrowDown') {
-//         myBallObj.ballSpeedX *= 2;
-//         myBallObj.ballSpeedY *= 2;
-//    }
-// });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//   function updateCountdown() {
-//     if (timeFinish || !isTimeRune || !isPageActive ) {
-//        index = currentTime;
-//     } else {
-//       if (index >= 0) {
-//         time.innerHTML = index;
-//         if (index <= 10) {
-//           time.style.color = "red";
-//         }
-//         if (!isPaused) {          
-//           index--;
-//         }
-//       } else {
-//         timeFinish = true;
-       
-//         gameover();
-//         resetGame();
-//       }
-//     }
-//   }
-
-//   updateCountdown();
-//   intervalId = setInterval(updateCountdown, 1000);
-
-//   // Écouteur d'événement pour le changement d'état de la page
-//   document.addEventListener('visibilitychange', () => {
-//     if (document.visibilityState === 'visible') {
-//       // La page est devenue active
-//       isPageActive = true;
-//       if (isTimeRune) {
-//         // Reprendre le décompte si nécessaire
-//         intervalId = setInterval(updateCountdown, 1000);
-//       }
-//     } else {
-//       // La page est devenue inactive
-//       isPageActive = false;
-//       clearInterval(intervalId); // Mettre en pause le décompte
-//     }
-//   });
-// }
-
 

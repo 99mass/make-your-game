@@ -220,11 +220,6 @@ if (px768.matches) {
     container.style.display="grid";
     container.style.gridTemplateColumns= "repeat(16, auto)";
 
-    MyBall.style.width="12px";
-    MyBall.style.height="12px";
-    player.style.width="80px";
-    player.style.height="15px";
-
     Menus.style.position="absolute"
     Menus.style.width= "100%";
     Menus.style.top="600px";
@@ -275,11 +270,10 @@ if (px500.matches) {
     block_console.style.width= "100%";
     block_console.style.height=  "500px";
 
-
-    MyBall.style.width="10px";
-    MyBall.style.height="10px";
-    player.style.width="60px";
-    player.style.height="12px";
+   
+    MyBall.style.width="13px";
+    MyBall.style.height="13px";
+    player.style.width="80px";
 
     Menus.style.width="100%";
     Menus.style.top="520px";

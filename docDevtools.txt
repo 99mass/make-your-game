@@ -9,15 +9,3 @@ Rendering : Il s'agit du temps passé à générer le rendu visuel de la page,
 
 Painting : Cette mesure concerne le temps que le navigateur a passé à dessiner le contenu de la page, 
                     y compris la création d'images bitmap pour l'affichage à l'écran.
-
-System: Cela représente le temps consacré aux opérations système, telles que la gestion des ressources, 
-                    la gestion de la mémoire, etc.
-
-Idle : Il s'agit du temp
-s où le navigateur est en attente, sans effectuer aucune tâche de traitement.
-
-Total : C'est la somme totale de tous les temps mentionnés ci-dessus. 
-                    Cela représente le temps total nécessaire pour charger et afficher la page.
-
-
-brick : 25000
