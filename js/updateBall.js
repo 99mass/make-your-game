@@ -42,8 +42,7 @@ function brickBreak() {
               
                 brick.break = true;
                 brick.element.style.visibility= "hidden";
-                myBallObj.ballSpeedY = -myBallObj.ballSpeedY;
-                bricktouch();
+                myBallObj.ballSpeedY = -myBallObj.ballSpeedY;           
                 brickBreakedCount+=1;
                 brickBreaked+=1;
                
@@ -60,8 +59,7 @@ function brickBreak() {
               
                 brick.break = true;
                 brick.element.style.visibility= "hidden";
-                myBallObj.ballSpeedX = -myBallObj.ballSpeedX;
-                bricktouch();  
+                myBallObj.ballSpeedX = -myBallObj.ballSpeedX;                 
                 brickBreakedCount+=1;
                 brickBreaked+=1;
               
@@ -69,7 +67,7 @@ function brickBreak() {
        
  
             if (brickBreakedCount > 0) {
-            
+                bricktouch();
                 const currentLevel = lev-1; // Remplacez par le niveau actuel.
 
                 currentScore = localStorage.getItem(`level_${currentLevel}_score`) || 0;

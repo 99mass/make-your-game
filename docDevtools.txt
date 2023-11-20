@@ -1,6 +1,3 @@
-Loading: Cela représente le temps que le navigateur a passé à charger les ressources de la page, 
-                    telles que les fichiers CSS, JavaScript, images, etc.
-
 Scripting : Cela représente le temps passé à exécuter du code JavaScript sur la page. 
                     Cela peut inclure l'exécution de scripts de la page web ou de scripts tiers.
 
